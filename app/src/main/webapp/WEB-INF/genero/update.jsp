@@ -9,6 +9,7 @@
     <body>
         <div class="container">
             <h1>Editar Gênero</h1>
+            <!--pega as informações e altera o genero com base no id adquirido adicinando as novas informações inseridas pelo usuario-->
             <form action="/genero/update" method="post">
                 <input type="hidden" name="id" value="${genero.id}" />
                 <div class="form-group">

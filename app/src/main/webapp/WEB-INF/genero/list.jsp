@@ -10,6 +10,7 @@
     <body>
         <div class="container">
         <h1>Gêneros</h1>
+        <!-- Faz uma consulta no banco de dados e retona os ID presentes lá e cria uma tabela onde cada linha é um genero -->
             <a href="/genero/insert" class="btn btn-primary">Novo Gênero</a>
             <table class="table">
                 <tr>

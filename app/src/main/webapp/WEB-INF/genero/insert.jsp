@@ -9,6 +9,7 @@
     <body>
         <div class="container">
             <h1>Novo Gênero</h1>
+            <!-- A diciona um novo genero a tabela do list com um novo ID-->
             <form action="/genero/insert" method="post">
                 <div class="form-group">
                     <label for="nome">Nome:</label>

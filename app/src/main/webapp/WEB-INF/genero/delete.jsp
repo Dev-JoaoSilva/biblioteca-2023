@@ -10,7 +10,8 @@
         <div class="container">
             <h1>Remover Gênero</h1>
             <p>Tem certeza que deseja remover o gênero "${genero.nome}" ?</p>
-            <form action="/genero/delete" method="post">
+            <!-- pega as informações e  deleta o genero com base no id adquirido-->
+            <form action="/genero/delete" method="post">  
                 <input type="hidden" name="id" value="${genero.id}" />
                 <br />
                 <a href="/genero/list" class="btn btn-primary" >Voltar</a>
