@@ -10,14 +10,17 @@
         <div class="container">
             <h1>Remover Gênero</h1>
             <p>Tem certeza que deseja remover o gênero "${genero.nome}" ?</p>
-            <!-- pega as informações e  deleta o genero com base no id adquirido-->
+            <!-- Início do formulário para remoção de gênero -->
             <form action="/genero/delete" method="post">  
+                <!-- Campo oculto para enviar o ID do gênero a ser excluído -->
                 <input type="hidden" name="id" value="${genero.id}" />
                 <br />
+                <!-- Link "Voltar" para retornar à lista de gêneros -->
                 <a href="/genero/list" class="btn btn-primary" >Voltar</a>
+                <!-- Botão "Excluir" para confirmar a exclusão -->
                 <button type="submit" class="btn btn-danger">Excluir</button>
             </form>
+            <!-- Fim do formulário -->
         </div>
     </body>
 </html>
-

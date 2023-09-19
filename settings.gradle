@@ -1,2 +1,5 @@
+// Define o nome do projeto raiz como 'application'.
 rootProject.name = 'application'
+
+// Inclui o projeto 'app' como parte do projeto raiz.
 include('app')

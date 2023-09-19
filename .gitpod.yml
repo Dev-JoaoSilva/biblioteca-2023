@@ -1,4 +1,5 @@
-image: gitpod/workspace-java-17
+image: gitpod/workspace-java-17  # Especifica a imagem Docker a ser usada para criar o ambiente Gitpod.
 
-tasks:
-  - init: "docker-compose up -d"
+tasks:  # Inicia a seção de definição de tarefas (tasks).
+
+  - init: "docker-compose up -d"  # Define uma tarefa chamada 'init' e especifica o comando a ser executado.

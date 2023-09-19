@@ -6,7 +6,7 @@
         <title>Home</title>
     </head>
     <body>
+        <!-- Exibe um título de nível 1 na página -->
         <h1>Olá Spring!!!</h1>
     </body>
 </html>
-

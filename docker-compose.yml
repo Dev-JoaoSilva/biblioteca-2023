@@ -1,17 +1,17 @@
-version: '3.1'
+version: '3.1'  # Define a versão do formato do arquivo Docker Compose sendo usado.
 
-services:
+services:  # Inicia a seção de definição de serviços.
 
-  db:
-    image: mysql:5.7
-    container_name: mysql
-    restart: always
-    environment:
-      MYSQL_DATABASE: application
-      MYSQL_USER: appuser
-      MYSQL_PASSWORD: apppasswd
-      MYSQL_ROOT_PASSWORD: rootpass
-    ports:
-      - 3306:3306
-    volumes:
-      - ./assets/data:/docker-entrypoint-initdb.d
+  db:  # Define um serviço chamado 'db' (nome do contêiner).
+    image: mysql:5.7  # Especifica a imagem Docker a ser usada para criar o contêiner MySQL (versão 5.7).
+    container_name: mysql  # Define um nome personalizado para o contêiner, que será 'mysql'.
+    restart: always  # Indica que o contêiner deve ser reiniciado automaticamente sempre que parar.
+    environment:  # Define variáveis de ambiente para o contêiner.
+      MYSQL_DATABASE: application  # Define o nome do banco de dados MySQL como 'application'.
+      MYSQL_USER: appuser  # Define o nome de usuário do MySQL como 'appuser'.
+      MYSQL_PASSWORD: apppasswd  # Define a senha do usuário do MySQL como 'apppasswd'.
+      MYSQL_ROOT_PASSWORD: rootpass  # Define a senha do usuário root do MySQL como 'rootpass'.
+    ports:  # Mapeia portas entre o host e o contêiner.
+      - 3306:3306  # Mapeia a porta 3306 do host para a porta 3306 do contêiner MySQL.
+    volumes:  # Define mapeamentos de volumes para o contêiner.
+      - ./assets/data:/docker-entrypoint-initdb.d  # Mapeia o diretório local './assets/data' para '/docker-entrypoint-initdb.d' no contêiner.
